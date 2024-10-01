@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-10-01T20:18:29.264574" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicio Amazon Smartphone" source="C:\Users\bnutec.ANIMAEDU\Documents\Atividade RobotFramework\exercicio_amazon_smartphone.robot">
+<test id="s1-t1" name="Pesquisa de Smartphone na Amazon" line="14">
+<kw name="Pesquisar Produto na Amazon">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-01T20:18:29.830562" level="INFO">Opening browser 'edge' to base url 'https://www.amazon.com.br'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-01T20:18:29.830562" elapsed="11.267878"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-01T20:18:41.099439" level="INFO">Typing text 'smartphone' into text field 'id=twotabsearchtextbox'.</msg>
+<arg>id=twotabsearchtextbox</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T20:18:41.098440" elapsed="0.394155"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-01T20:18:41.492595" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-01T20:18:41.492595" elapsed="3.986254"/>
+</kw>
+<status status="PASS" start="2024-10-01T20:18:29.830562" elapsed="15.648287"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-10-01T20:18:45.577779" level="INFO">Current page contains text 'smartphone'.</msg>
+<arg>${PRODUTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-10-01T20:18:45.479849" elapsed="0.097930"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-01T20:18:45.578783" elapsed="3.109198"/>
+</kw>
+<status status="PASS" start="2024-10-01T20:18:29.814939" elapsed="18.873042"/>
+</test>
+<status status="PASS" start="2024-10-01T20:18:29.264574" elapsed="19.423407"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio Amazon Smartphone">Exercicio Amazon Smartphone</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
